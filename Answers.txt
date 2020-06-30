@@ -1,0 +1,10 @@
+10) since Thermometer and PitotTube class is a subclass of TemperatureConverter which implements the interface Converter
+interface and this Converter interface has its own method convert so, the property of that interface comes to the
+Thermometer and PitotTube class. So, we can access the convert method with Thermometer and PitotTube class instances.
+
+11) Though Converter interface holds an object of Thermometer or Thermocouple , Converter doesn't know about isHot or
+isFast because this methods are properties of Thermometer not the property of Converter. For that same reason isFast fails
+too.
+
+12)Since Converter object is type casted to its subclasses like Thermometer etc. so, object type changes to that subclasses.
+So, it now can call its own defined methods. so, isHot and isFast works fine.
